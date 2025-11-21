@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>나만의 힐링송</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 외부 CSS 파일 연결 (같은 폴더의 style.css) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- header = 하늘 영역 -->
+  <header class="sky">
+    <div class="inner">
+      <h1>나만의 힐링송 정원</h1>
+      <p>힘들고 지친 하루, 나를 위로해 주는 노래들을 모아둔 작은 정원입니다.</p>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#song1">힐링송 1</a></li>
+          <li><a href="#song2">힐링송 2</a></li>
+          <li><a href="#recommend">힐링송 추천하기</a></li>
+          <li><a href="#about-me">나의 정보</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main 안의 section = 각각의 화단 영역 -->
+  <main>
+    <!-- 인트로 섹션 (간단한 설명) -->
+    <section id="intro" class="flowerbed intro-section">
+      <h2>나만의 힐링송 정원에 오신 것을 환영합니다 🌿</h2>
+      <p>
+        이 페이지는 제가 자주 듣는 힐링송을 기록하기 위해 만들었습니다.
+    
+      </p>
+      <ul class="intro-list">
+        <li>잔잔한 감성 발라드</li>
+        <li>마음을 울리는 목소리</li>
+        <li>몰입하게 되는 가사</li>
+      </ul>
+    </section>
+
+    <!-- 첫 번째 노래 섹션 -->
+    <section id="song1" class="flowerbed song-card">
+      <header class="song-header">
+        <h2>힐링송 1. 가질 수 없는 너</h2>
+        <p class="artist">노래: 김연우</p>
+      </header>
+
+      <div class="song-content">
+        <figure class="song-thumbnail">
+          <!-- 썸네일1.jpg는 index.html과 같은 폴더에 있어야 합니다 -->
+          <a href="https://youtu.be/xSVCyTExGxw?si=6pushglLG0sHAJkj" target="_blank" rel="noopener">
+            <img src="썸네일1.jpg" alt="김연우 - 가질 수 없는 너 썸네일" />
+          </a>
+          <figcaption>썸네일을 클릭하면 유튜브로 이동합니다.</figcaption>
+        </figure>
+
+        <div class="song-text">
+          <h3>노래 소개</h3>
+          <p>
+            뛰어난 가창력과 목소리로 마음을 울린다.
+        
+          </p>
+
+          <h3>나의 이야기</h3>
+          <p>
+            중학교 때 자주 듣던 노래, 당시 너무 행복했던 겨울이 생각나는 노래이다.
+            
+          </p>
+
+          <a class="listen-button" href="https://youtu.be/xSVCyTExGxw?si=6pushglLG0sHAJkj" target="_blank" rel="noopener">
+            유튜브에서 듣기
+          </a>
+
+          <ul class="song-tags">
+            <li>#감성발라드</li>
+            <li>#밤에듣기좋은노래</li>
+            <li>#잔잔한위로</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 두 번째 노래 섹션 -->
+    <section id="song2" class="flowerbed song-card">
+      <header class="song-header">
+        <h2>힐링송 2. 좋아좋아</h2>
+        <p class="artist">노래: 엑소(EXO)</p>
+      </header>
+
+      <div class="song-content">
+        <figure class="song-thumbnail">
+          <!-- 썸네일2.jpg는 index.html과 같은 폴더에 있어야 합니다 -->
+          <a href="https://youtu.be/Wwm44GuPqNk?si=Cj61r1PcHxLHv7a0" target="_blank" rel="noopener">
+            <img src="썸네일2.jpg" alt="엑소 - 좋아좋아 썸네일" />
+          </a>
+          <figcaption>썸네일을 클릭하면 유튜브로 이동합니다.</figcaption>
+        </figure>
+
+        <div class="song-text">
+          <h3>노래 소개</h3>
+          <p>
+            따뜻한 햇살이 비춰지는 듯한 노래
+            
+          </p>
+
+          <h3>나의 이야기</h3>
+          <p>
+            겨울철 따뜻한 햇살이 느껴지는 노래이다
+            
+          </p>
+
+          <a class="listen-button" href="https://youtu.be/Wwm44GuPqNk?si=Cj61r1PcHxLHv7a0" target="_blank" rel="noopener">
+            유튜브에서 듣기
+          </a>
+
+          <ul class="song-tags">
+            <li>#설레는분위기</li>
+            <li>#에너지충전</li>
+            <li>#좋아하는아이돌</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 힐링송 추천 폼 섹션 (입력 양식, 꽃잎처럼 배치 예정) -->
+    <section id="recommend" class="flowerbed recommend-section">
+      <h2>당신의 힐링송도 알려주세요 🌸</h2>
+      <p>나에게 힐링을 주는 노래처럼, 여러분의 힐링송도 함께 공유해 주세요.</p>
+
+      <!-- 이 form의 입력 필드들은 CSS에서 nth-child로 색을 다르게, 꽃잎처럼 배치할 예정 -->
+      <form class="healing-form" action="#" method="post">
+        <div class="form-row">
+          <label for="user-name">이름</label>
+          <input type="text" id="user-name" name="user-name" placeholder="이름을 입력하세요" required />
+        </div>
+
+        <div class="form-row">
+          <label for="user-email">이메일</label>
+          <input type="email" id="user-email" name="user-email" placeholder="이메일을 입력하세요" required />
+        </div>
+
+        <div class="form-row">
+          <label for="song-title">추천 노래 제목</label>
+          <input type="text" id="song-title" name="song-title" placeholder="예: 어떤 노래" required />
+        </div>
+
+        <div class="form-row">
+          <label for="song-artist">가수</label>
+          <input type="text" id="song-artist" name="song-artist" placeholder="가수 이름을 입력하세요" />
+        </div>
+
+        <div class="form-row">
+          <label for="song-reason">이 노래가 힐링송인 이유</label>
+          <textarea id="song-reason" name="song-reason" rows="4" placeholder="마음이 따뜻해지는 노래."></textarea>
+        </div>
+
+        <div class="form-row form-submit-row">
+          <button type="submit">힐링송 보내기</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- footer = 땅 영역, 가장 아래 섹션에 나의 정보 -->
+  <footer class="ground">
+    <section id="about-me" class="about-section">
+      <h2>나의 정보</h2>
+      <p>이 페이지를 만든 사람: <strong>작성자</strong></p>
+      <!-- 필요하다면 '작성자' 부분을 본인 이름이나 닉네임으로 수정하세요 -->
+      <!-- 예: <strong>홍길동</strong> -->
+
+      <p>이메일: 
+        <a href="mailto:jy020228@naver.com">jy020228@naver.com</a>
+      </p>
+
+      <p class="about-text">
+        좋은 노래를 나누고 싶어 이 페이지를 만들었습니다.
+       
+      </p>
+
+      <p class="course-info">
+        <오픈소스 웹 개발 · 12주차 과제>
+     
+      </p>
+    </section>
+  </footer>
+</body>
+</html>
